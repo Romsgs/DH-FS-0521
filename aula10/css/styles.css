@@ -1,0 +1,26 @@
+body {
+    background-color: yellow;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #ffb90f;
+    margin-top: 70px;
+}
+nav {
+   
+}
+
+#logo {
+     float: left;
+     width: 200px;
+}
+
+ul {
+    float:left
+}
+
+form {
+    float: right;
+}
