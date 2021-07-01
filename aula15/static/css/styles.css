@@ -4,9 +4,11 @@
     padding: 0;
 }
 body{
+    height: 100%;
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    /* background-position: center; */
+    background-size: 170%; 
 }
 header{
     background-color: white;
@@ -27,12 +29,11 @@ header > div {
     justify-content: flex-start;
     align-items: center;
     font-size: 30px;
-    }
+}
 header > div > img {
     width: 80px;
     justify-content: space-between;
     align-items: center;
-
 }
 header > nav{
     width: 50%;
@@ -46,24 +47,109 @@ header > nav > ul{
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
-    
 }
 header > nav > ul > li{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;  
- 
 }
-a:active{
-    font-style: normal;
-}
-
 main {
-    width: auto;
-    background-image: url(../img/banner.jpg);
-}
-
-footer{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    height: auto;
+}
+main > div{
+    margin-top: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:300px;
+}
+main > div > article{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 50%;
+}
+main > div > article > h1{
+    font-size: 35px;
+}
+#checkitout{
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    width: 175px;
+    height: 50px;
+    font-size: large;
+}
+main > section{
+    margin-top:  100px;
+    width: 90%;
+    height:max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+main > section > article {
+    flex-grow: 1;
+    width: 25%;
+    height: 260px;
+    margin: 5px 5px 5px 5px;
+}
+main > section > article > button{
+    width: 100px;
+    height: 40px;
+}
+main > section > article > img{
+    width: 100%;
+}
+footer{
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #62498f;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    background-size: cover;
+}
+#produto1{
+    background-image: url("../img/product-1.png");
+}
+#produto2{
+    background-image: url("../img/product-2.jpg");
+}
+#produto3{
+    background-image: url("../img/product-3.jpg");
+}
+#produto4{
+    background-image: url("../img/product-4.jpg");
+}
+#produto5{
+    background-image: url("../img/product-5.jpg");
+}
+#produto6{
+    background-image: url("../img/product-6.jpg");
 }
