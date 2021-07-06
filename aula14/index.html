@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id='logo' src="./img/logo.png" title="Logo"/>
+        <nav>
+            <div id="ull">
+                <ul type="none" id="lista1">
+                    <li> Smatphone </li>
+                    <li> Tablets </li>
+                    <li> Contato </li>
+                </ul>
+            </div>
+             <form action="app.js" alt="asdasd" >
+                 <input type="text" placeholder="buscar por este produto">
+                 <button type="submit" >Pesquisar</button>
+             </form>
+        </nav>
+    </header>
+    <main id="mainForm">
+        <h1 id="titulo">Fale Conosco</h1>
+        <p id="paragrafo">Preencha o formulário abaixo para entrar em contato</p>
+       <section id="formId">
+           <form id="form1" action="paginadebackend" method="POST">
+                <div id="row">
+                    <div id="Fnome">
+                        <label for="nome" id="nome">Nome</label>
+                        <input name="nome" id="nome" />
+                    </div>
+                    <div id="Femail">
+                        <label for="email" id="email">E-mail</label>
+                        <input name="email" id="emailid"/>
+                    </div>
+                </div>
+                
+                
+                <div id="textarea">
+                    <label for="mensagem" id="mensagem"> Mensagem </label>
+                    <textarea name="mensagem" id="msg"></textarea>
+                </div>
+                <div id="submit">
+                    <label for="aceita"> Aceito os termos de uso </label>
+                    <input name="aceita" type="checkbox" id="chack"/>
+                    <button type="submit" id="enviar">Enviar</button>
+                </div>
+               
+
+           </form>
+       </section>
+        
+    </main>
+    <footer>Craftsy 2021</footer>
+</body>
+</html>

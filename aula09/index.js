@@ -17,23 +17,22 @@ app.get("/cumprimentar/:nome", (req, res)=>{
     const nome = req.params.nome
     res.send(`ola ${nome}`)
 })
-app.get("/calcular/:n1/:n2", (req, res)=>{
-    
+app.get("/calcular/:n1/:n2?", (req, res)=>{
+    //modo one liner => >   const {numero1, numero2} = req.params
     const numero1 = parseInt(req.params.n1)
-    const numero2 = parseInt(req.params.n2)    
+    const numero2 = parseInt(req.params.n2)
     
+    if(n2){
         res.send(`a soma é ${numero1 + numero2} `)    
+    } else {
+        res.send(`o numero é ${numero1} `) 
+    }
+    
+       
 
 })
 
-app.get("/calcular/:n1", (req, res)=>{
-    
-    const numero1 = parseInt(req.params.n1)
-    
-    
-        res.send(`o numero é ${numero1} `)    
 
-})
 
 app.listen(3000, () => {
     console.log("servidor rodando na porta 3000")
